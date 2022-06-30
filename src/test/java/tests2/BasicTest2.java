@@ -8,37 +8,38 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
+import tests.TestBase;
 
 import java.time.Duration;
 
-public class TestClass2 {
+public class BasicTest2 extends TestBase {
 
 
-    WebDriver driver;
-
-    @BeforeClass
-    public void setupClass(){
-        WebDriverManager.chromedriver().setup();
-    }
-
-    @AfterClass
-    public void tearDownClass(){
-        System.out.println("Cleanup once after everything executed in the class");
-    }
-
-    @BeforeMethod
-    public void setupMethod(){
-
-
-         driver = new ChromeDriver();
-         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-         driver.manage().window().maximize();
-
-    }
-    @AfterMethod
-    public void tearDown(){
-        driver.quit();
-    }
+//    WebDriver driver;
+//
+//    @BeforeClass
+//    public void setupClass(){
+//        WebDriverManager.chromedriver().setup();
+//    }
+//
+//    @AfterClass
+//    public void tearDownClass(){
+//        System.out.println("Cleanup once after everything executed in the class");
+//    }
+//
+//    @BeforeMethod
+//    public void setupMethod(){
+//
+//
+//         driver = new ChromeDriver();
+//         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+//         driver.manage().window().maximize();
+//
+//    }
+//    @AfterMethod
+//    public void tearDown(){
+//        driver.quit();
+//    }
 
 //    @Test
 //    public void verifyTitleTest() {

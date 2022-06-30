@@ -9,7 +9,7 @@ public class ExecutionOrder {
 
 //   enabled = false parameter is not going to execute test
     @Test (priority = 1000,enabled = false)
-    public void Test1(){
+    public void loginTest1(){
         System.out.println("Test1");
     }
 
@@ -25,13 +25,13 @@ public class ExecutionOrder {
     }
 
     @Test (priority = 5)
-    public void loginTest(){
+    public void loginTest2(){
         System.out.println("Test4");
     }
 
 
     @Test
-    public void singupTest(){
+    public void singupAndloginTest(){
         System.out.println("Test5");
     }
 

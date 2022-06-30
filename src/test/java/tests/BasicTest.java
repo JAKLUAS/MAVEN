@@ -1,19 +1,14 @@
 package tests;
 
-import com.github.javafaker.Faker;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.time.Duration;
 
-public class TestClass {
+public class BasicTest extends TestBase {
 
 
 //    public static void main(String[] args) {
@@ -34,31 +29,31 @@ public class TestClass {
 ////        System.out.println(faker.chuckNorris().fact());
 //
 //    }
-    WebDriver driver;
-
-    @BeforeClass
-    public void setupClass(){
-        WebDriverManager.chromedriver().setup();
-    }
-
-    @AfterClass
-    public void tearDownClass(){
-        System.out.println("Cleanup once after everything executed in the class");
-    }
-
-    @BeforeMethod
-    public void setupMethod(){
-
-
-         driver = new ChromeDriver();
-         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-         driver.manage().window().maximize();
-
-    }
-    @AfterMethod
-    public void tearDown(){
-        driver.quit();
-    }
+//    WebDriver driver;
+//
+//    @BeforeClass
+//    public void setupClass(){
+//        WebDriverManager.chromedriver().setup();
+//    }
+//
+//    @AfterClass
+//    public void tearDownClass(){
+//        System.out.println("Cleanup once after everything executed in the class");
+//    }
+//
+//    @BeforeMethod
+//    public void setupMethod(){
+//
+//
+//         driver = new ChromeDriver();
+//         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+//         driver.manage().window().maximize();
+//
+//    }
+//    @AfterMethod
+//    public void tearDown(){
+//        driver.quit();
+//    }
 
     @Test
     public void verifyTitleTest() {
