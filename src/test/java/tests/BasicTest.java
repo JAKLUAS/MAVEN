@@ -55,7 +55,8 @@ public class BasicTest extends TestBase {
 //        driver.quit();
 //    }
 
-    @Test
+    @Test(groups ={"homepage","smoke","flaky"})
+
     public void verifyTitleTest() {
 
         driver.get("http://secure.smartbearsoftware.com/samples/TestComplete12/WebOrders/Login.aspx");
@@ -66,7 +67,7 @@ public class BasicTest extends TestBase {
 
     }
 
-    @Test
+    @Test(groups ={"smoke"})
     public void verifyUrlTest() {
 
         driver.get("http://secure.smartbearsoftware.com/samples/TestComplete12/WebOrders/Login.aspx");

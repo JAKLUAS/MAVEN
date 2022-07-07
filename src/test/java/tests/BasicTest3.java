@@ -38,7 +38,7 @@ public class BasicTest3 extends TestBase{
 //        driver.quit();
 //    }
 
-    @Test
+    @Test(groups = {"smoke"})
     public void verifyTitleTest() {
 
         driver.get("http://secure.smartbearsoftware.com/samples/TestComplete12/WebOrders/Login.aspx");
@@ -49,7 +49,7 @@ public class BasicTest3 extends TestBase{
 
     }
 
-    @Test
+    @Test(groups = {"homepage"})
     public void verifyUrlTest() {
 
         driver.get("http://secure.smartbearsoftware.com/samples/TestComplete12/WebOrders/Login.aspx");

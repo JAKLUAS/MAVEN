@@ -47,7 +47,7 @@ public class BeforeAndAfterAnnotations {
         System.out.println("after method");
     }
 
-    @Test
+    @Test(groups = {"flaky"})
     public void Test1(){
         System.out.println("Test1");
     }

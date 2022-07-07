@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="UI Tests">
+
+    <test name="Test1">
+
+        <parameter name="USER" value="jhondoe"/>
+        <parameter name="PASS" value="Blabla"/>
+
+        <classes>
+
+
+            <class name="tests2.ParametrizedTest">
+
+<!--                <parameter name="USER" value="jhondoe"/>-->
+<!--                <parameter name="PASS" value="Blabla"/>-->
+<!--                eger birden fazla test case olursa parametreler test levele cikartilir-->
+
+                <methods>
+                    <include name="testLoginWithInValidCredentials"/>
+
+                </methods>
+
+            </class>
+        </classes>
+
+    </test>
+
+    <test name="Test2">
+
+        <parameter name="USER" value="Barrack"/>
+        <parameter name="PASS" value="blabla"/>
+
+        <classes>
+
+            <!--             class names have to be added with its package name if there is one-->
+            <class name="tests2.ParametrizedTest">
+
+
+                <methods>
+                    <include name="testLoginWithInValidCredentials"/>
+
+                </methods>
+
+            </class>
+        </classes>
+
+    </test>
+
+
+</suite>

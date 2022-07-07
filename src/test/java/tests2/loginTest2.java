@@ -20,7 +20,7 @@ public class loginTest2 extends TestBase {
 
 
 
-    @Test
+    @Test(groups = {"smoke"})
     public void testLoginWithValidCredentials() {
 
         driver.get("http://secure.smartbearsoftware.com/samples/TestComplete12/WebOrders/Login.aspx");
@@ -31,7 +31,7 @@ public class loginTest2 extends TestBase {
 
     }
 
-    @Test
+    @Test(groups = {"homepage","flaky"})
     public void testLoginWithInValidCredentials() {
 
         driver.get("http://secure.smartbearsoftware.com/samples/TestComplete12/WebOrders/Login.aspx");
