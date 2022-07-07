@@ -23,7 +23,8 @@ public class DatProviderCollection {
     public Object[][] getData2() {
 
         Faker fake = new Faker();
-        return new Object[][]{{"afa", "dfkfd"},
+        return new Object[][]{
+
                 {fake.name().username(),fake.internet().password()},
                 {fake.name().username(),fake.internet().password()},
                 {fake.name().username(),fake.internet().password()},
